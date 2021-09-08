@@ -130,7 +130,7 @@ header {
     width: 35px;
     height: 35px; 
     padding-right: 30px; 
-    
+}  
 .imgCart, ::after, ::before {
     box-sizing: unset;
 } 
@@ -282,7 +282,6 @@ a.linkFooter {
 .subtitlesIndex {
     padding: 10px 20px 30px 40px;
 }
-
 .animalSection {
     display: flex;
     flex-direction: column;
@@ -374,6 +373,59 @@ a.linkFooter {
 }
 
 /*CSS FAQs menu acordeon*/
-#acordion div p {
-    display: none;
+.wrapper {
+    max-width: 600px;
+    padding: 0 20px;
+}
+.wrapper .parent-tab {
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+.wrapper .parent-tab label {
+    background-color: #fbd10d;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+}
+.wrapper label span {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI'
+}
+.wrapper label .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    color: #fbd10d;
+    display: block;
+    background-color: #343a40;
+    border-radius: 50%;
+}
+.parent-tab input:checked ~ label .icon i:before {
+    content: '\f068';
+}
+.wrapper label .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .parent-tab .content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.parent-tab input:checked ~ .content {
+    max-height: 100vh;
+}
+.wrapper .parent-tab .content p {
+    padding: 15px 20px;
+}
+.wrapper input {
+   display: none;
+
 }
