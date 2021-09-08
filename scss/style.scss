@@ -429,3 +429,23 @@ a.linkFooter {
    display: none;
 
 }
+
+/*CSS form contacto*/
+form {
+    width: 50%;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    border: none;
+}
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+input.checkbox {
+    width: 15px;
+}
