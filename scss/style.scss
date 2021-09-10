@@ -32,6 +32,7 @@ h2 {
 }
 h3 {
     color:#fbd10d;
+    font-family: 'Segoe UI';
 }
 p {
     color:#ffffff;
@@ -245,28 +246,33 @@ a.linkFooter {
 .footerFlex__List {
     padding: 0;
     list-style-type: none;
+    font-family: 'Segoe UI';
 }
 .footerFlex__List-horizontal {
     display: flex;
     width: 100%;
     padding: 0;
     list-style-type: none;
+    font-family: 'Segoe UI';
 }
 .footerFlex__List-horizontal-middle {
     justify-content: center;
     list-style-type: none;
     display: flex;
+    font-family: 'Segoe UI';
     width: 100%;
     padding: 0;
 }
 .footerFlex__List-horizontal-middle li {
     margin-left: 10px ;
+    font-family: 'Segoe UI';
 }
 .footerFlex__Section {
     display: flex;
     flex-direction: column;
     width: 15%;
     padding-left: 80px;
+    font-family: 'Segoe UI';
 }
 .footerFlex__Section-middle {
     display: flex;
@@ -275,6 +281,7 @@ a.linkFooter {
     padding-left: 80px;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI';
 }
 
 
