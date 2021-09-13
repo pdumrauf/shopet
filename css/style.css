@@ -68,7 +68,7 @@ header {
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding-top: 30px; }
 
 /* Imagenes del index */
