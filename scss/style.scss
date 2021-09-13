@@ -52,7 +52,6 @@ li {
     font-family: 'Segoe UI';
 }
 button {
-    margin-bottom: 15px;
     letter-spacing: 2px;
     padding: 6px 12px;
     cursor: pointer;
@@ -70,7 +69,7 @@ header {
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     padding-top: 30px;
 }
 
@@ -91,12 +90,12 @@ header {
 
 /* CSS imagenes producto*/
 .imgProduct {
-    width: 250px; 
+    width: 300px; 
     height: auto;
     border-radius: 5px;
 }
-.carousel-inner.carouselContainer {
-    width: 300px;
+.itemDescription {
+    height: 42px;
 }
 
 /* CSS de menu */
@@ -195,7 +194,7 @@ ul.listNav li {
     position: absolute;
     background: #fbd10d;
     width: 250px;
-    height: 100hv;
+    height: 100vh;
     top: 0;
     left: 0;
     transition:  all 500ms ease;
@@ -215,6 +214,7 @@ ul.listNav li {
     display: block;
     padding: 20px;
 }
+
 .underlined::after {
     content: '';
     display: block;
@@ -234,8 +234,11 @@ ul.listNav li {
     height: auto;
     padding-right: 10px;
 }
-a.linkFooter {
+.linkFooter {
     color: #ffffff;
+}
+.linkFooter:hover {
+    color: #fbd10d;
 }
 .footerFlex {
     display: flex;
@@ -244,6 +247,13 @@ a.linkFooter {
     padding-top: 80px;
 }
 .footerFlex__List {
+    width: 40%;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Segoe UI';
+}
+.footerFlex__List-even {
+    width: auto;
     padding: 0;
     list-style-type: none;
     font-family: 'Segoe UI';
@@ -283,7 +293,28 @@ a.linkFooter {
     align-items: center;
     font-family: 'Segoe UI';
 }
+.webAuthor {
+    display: flex;
+}
+.webAuthor p {
+    margin: 10px;
+}
+.webAuthor a {
+    margin: 10px;
+}
 
+.underlinedLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fbd10d;
+    transition: width 400ms;
+}
+.underlinedLink:hover::after {
+    width: 40%;
+    transition: width 400ms;
+}
 
 /* CSS secciones Index*/
 .subtitlesIndex {
@@ -345,7 +376,7 @@ a.linkFooter {
     grid-row-gap: 50px;
 }
 
-/* Mobile First Index */
+/* Mobile First Productos */
 /*vista desktop*/
 @media only screen and (min-width: 1024px) {
     .gridContainerProducts {
@@ -447,6 +478,7 @@ input, textarea {
     margin-bottom: 20px;
     font-size: 17px;
     border: none;
+    font-family: inherit;
 }
 textarea {
     min-height: 100px;
@@ -455,4 +487,90 @@ textarea {
 }
 input.checkbox {
     width: 15px;
+}
+
+/*vista mobile*/
+@media only screen and (max-width:767px) {
+/* CSS secciones Index*/
+    .heading {
+        text-align: center;
+    }
+    .animalSection__Item {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .animalSection__Item-Text {
+        width: auto;
+    }
+    .animalSection__Item-Img {
+        width: 100%;   
+    }
+    .animalSection__Item-even {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .footerFlex {
+        flex-direction: column;
+    }
+
+    .footerFlex__List {
+        width: unset;
+    }
+
+    .footerFlex__Section {
+        width: auto;
+        padding: 0 50px;
+        order: 1;
+        text-align: center;
+    }
+
+    .footerFlex__Section-middle {
+        width: auto;
+        order: 2;
+        align-items: unset;
+        padding-left: 0;
+
+    }
+    .footerFlex__Section-middle img {
+        display: none;
+
+    }
+    .footerFlex__List-horizontal-middle {
+        width: auto;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .footerFlex__List-horizontal {
+        justify-content: center;
+    }
+
+    .webAuthor {
+        justify-content: center;
+    }
+    .underlinedLink:hover::after {
+        width: 0;
+    }
+
+    .containerMenu {
+        width: 100vw;
+    }
+    .nav {
+        text-align: center;
+    }
+    .contMenu {
+        max-width: unset;
+    }
+    .ulFlex {
+        padding: 0;
+        margin-top: 100px;
+    }
+    ul.listNav li {
+        text-align: center;
+    }
+
+    form {
+        width: 80vw;
+    }
 }
