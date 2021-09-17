@@ -6,6 +6,8 @@
 	<meta name="keywords" content="pet store, pet foods online, online pet shop, cheap pet supplies, dog food, cat toys">
 	<meta name="description" content="Buy pet foods and pet supplies online from our online store. Excellent customer service and free delivery over £19.99">
 	<title>Welcome to Shopet.com</title>
+	<!-- CSS animate-->
+	<link rel="stylesheet" href="css/animate.css">
 	<!--Linkeo a CSS-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/ico" href="assets/img/logo.ico">
@@ -48,7 +50,7 @@
 	</section>
 	<!-- Primera seccion Cats-->
 	<section class="animalSection">
-		<div class="animalSection__Item">
+		<div class="animalSection__Item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
 			<div class="animalSection__Item-Img">
 				<img src="assets/img/cat.jpg" alt="grey cat" class="imgIndex scale">
 			</div>
@@ -58,7 +60,7 @@
 			</div>
 		</div>
 		<!-- Segunda seccion Dogs-->
-		<div class="animalSection__Item-even">
+		<div class="animalSection__Item-even  wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
 			<div class="animalSection__Item-Img">
 				<img src="assets/img/dog.jpg" alt="white dog" class="imgIndex scale">
 			</div>
@@ -68,7 +70,7 @@
 			</div>
 		</div>
 		<!-- Tercera seccion FAQs -->
-		<div class="animalSection__Item">
+		<div class="animalSection__Item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
 			<div class="animalSection__Item-Img">
 				<img src="assets/img/preguntas.jpg" alt="FAQ" class="imgIndex scale">
 			</div>
@@ -111,5 +113,9 @@
 			</ul>
 		</div>
 	</footer>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 </body>
 </html>
