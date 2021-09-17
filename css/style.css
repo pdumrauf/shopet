@@ -118,7 +118,8 @@ header {
 .logoContainer {
   display: flex;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  width: 95%; }
 
 .bannerTextContainer {
   width: 100%;
