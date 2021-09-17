@@ -522,6 +522,8 @@ textarea {
     justify-content: center; }
   .webAuthor {
     justify-content: center; }
+  .underlined:hover::after {
+    display: none; }
   .underlinedLink:hover::after {
     width: 0; }
   .containerMenu {
