@@ -1,3 +1,4 @@
+/*SASS variables*/
 /* CSS body */
 body {
   background-color: #343a40;
@@ -21,26 +22,26 @@ p.heading2 {
 
 h1.titlePages {
   color: #fbd10d;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   text-align: center; }
 
 h2 {
   color: #fbd10d;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   align-self: flex-start; }
 
 h3 {
   color: #fbd10d;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 p {
   color: #ffffff;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 a {
   color: #343a40;
   text-decoration: none;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 a:hover {
   text-decoration: none;
@@ -48,10 +49,11 @@ a:hover {
 
 li {
   color: #ffffff;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 button {
   letter-spacing: 2px;
+  margin-top: 5px;
   padding: 6px 12px;
   cursor: pointer;
   background-color: transparent;
@@ -106,6 +108,11 @@ header {
 
 .imgLogoHeader {
   position: absolute;
+  padding-top: 10px;
+  z-index: 10; }
+
+.imgLogoFooter {
+  position: relative;
   padding-top: 10px; }
 
 .logoContainer {
@@ -242,39 +249,39 @@ ul.listNav li {
   width: 40%;
   padding: 0;
   list-style-type: none;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .footerFlex__List-even {
   width: auto;
   padding: 0;
   list-style-type: none;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .footerFlex__List-horizontal {
   display: flex;
   width: 100%;
   padding: 0;
   list-style-type: none;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .footerFlex__List-horizontal-middle {
   justify-content: center;
   list-style-type: none;
   display: flex;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   width: 100%;
   padding: 0; }
 
 .footerFlex__List-horizontal-middle li {
   margin-left: 10px;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .footerFlex__Section {
   display: flex;
   flex-direction: column;
   width: 15%;
   padding-left: 80px;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .footerFlex__Section-middle {
   display: flex;
@@ -282,7 +289,7 @@ ul.listNav li {
   width: 70%;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .webAuthor {
   display: flex; }
@@ -412,7 +419,7 @@ ul.listNav li {
 .wrapper label span {
   font-size: 15px;
   font-weight: 500;
-  font-family: 'Segoe UI'; }
+  font-family: "Segoe UI"; }
 
 .wrapper label .icon {
   position: relative;
@@ -451,26 +458,36 @@ form {
   width: 50%;
   margin: auto; }
 
+input.text {
+  height: 30px; }
+
 input, textarea {
   width: 100%;
   margin-bottom: 20px;
   font-size: 17px;
   border: none;
-  font-family: inherit; }
+  font-family: "Segoe UI";
+  border-radius: 3px; }
 
 textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%; }
 
-input.checkbox {
+.checkbox {
   width: 15px; }
+
+.news {
+  color: #ffffff;
+  font-family: "Segoe UI"; }
 
 /*vista mobile*/
 @media only screen and (max-width: 767px) {
   /* CSS secciones Index*/
   .heading {
     text-align: center; }
+  .logoContainer {
+    width: 80%; }
   .animalSection__Item {
     max-width: 100%;
     flex-direction: column; }

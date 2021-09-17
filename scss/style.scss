@@ -1,19 +1,25 @@
+/*SASS variables*/
+$white: #ffffff;
+$yellow: #fbd10d;
+$grey: #343a40;
+$font: 'Segoe UI';
+
 /* CSS body */
 body {
-    background-color:#343a40;
+    background-color: $grey;
     margin: 0;
 }
 
 /* CSS para elementos */
 h1.heading {
-    color:#ffffff;
+    color: $white;
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 32px;
     letter-spacing: 3px;
 }
 p.heading2 {
-    color:#ffffff;
+    color: $white;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 100;
@@ -21,46 +27,47 @@ p.heading2 {
     letter-spacing: 3px;
 }
 h1.titlePages {
-    color:#fbd10d;
-    font-family: 'Segoe UI';
+    color: $yellow;
+    font-family: $font;
     text-align: center;
 }
 h2 {
-    color:#fbd10d;
-    font-family: 'Segoe UI';
+    color: $yellow;
+    font-family: $font;
     align-self: flex-start;
 }
 h3 {
-    color:#fbd10d;
-    font-family: 'Segoe UI';
+    color: $yellow;
+    font-family: $font;
 }
 p {
-    color:#ffffff;
-    font-family: 'Segoe UI';
+    color: $white;
+    font-family: $font;
 }
 a {
-    color:#343a40;
+    color: $grey;
     text-decoration: none;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 a:hover {
     text-decoration: none;
-    color: #343a40;
+    color: $grey;
 }
 li {
-    color:#ffffff;
-    font-family: 'Segoe UI';
+    color:$white;
+    font-family: $font;
 }
 button {
     letter-spacing: 2px;
+    margin-top: 5px;
     padding: 6px 12px;
     cursor: pointer;
     background-color: transparent;
-    border-color: #fbd10d;
-    color: #ffffff;
+    border-color: $yellow;
+    color: $white;
 }
 button:hover {
-    background-color: #fbd10d;
+    background-color: $yellow;
 }
 header {
     position: fixed;
@@ -110,7 +117,12 @@ header {
 }
 .imgLogoHeader {
     position: absolute;
-    padding-top: 10px;  
+    padding-top: 10px;
+    z-index: 10;  
+}
+.imgLogoFooter {
+    position: relative;
+    padding-top: 10px;
 }
 .logoContainer {
     display: flex;
@@ -156,7 +168,7 @@ ul.listNav li {
 .lbl-menu #spn1, #spn2, #spn3 {
     position: absolute;
     content: '';
-    background: #fbd10d;
+    background: $yellow;
     width: 40px;
     height: 4px;
     border-radius: 5px;
@@ -174,7 +186,7 @@ ul.listNav li {
 #btn-menu:checked ~ .lbl-menu #spn1 {
     transform: rotate(140deg);
     top: 10px;
-    background: #ffffff;
+    background: $white;
 }
 #btn-menu:checked ~ .lbl-menu #spn2 {
     opacity: 0;
@@ -182,7 +194,7 @@ ul.listNav li {
 #btn-menu:checked ~ .lbl-menu #spn3 {
     transform: rotate(-140deg);
     top: 10px;
-    background: #ffffff;
+    background: $white;
 }
 #btn-menu:checked ~ .containerMenu {
     opacity: 1;
@@ -192,7 +204,7 @@ ul.listNav li {
 /*CSS nav lateral*/
 .containerMenu {
     position: absolute;
-    background: #fbd10d;
+    background: $yellow;
     width: 250px;
     height: 100vh;
     top: 0;
@@ -220,7 +232,7 @@ ul.listNav li {
     display: block;
     width: 0;
     height: 2px;
-    background: #ffffff;
+    background: $white;
     transition: width 400ms;
 }
 .underlined:hover::after {
@@ -235,10 +247,10 @@ ul.listNav li {
     padding-right: 10px;
 }
 .linkFooter {
-    color: #ffffff;
+    color: $white;
 }
 .linkFooter:hover {
-    color: #fbd10d;
+    color: $yellow;
 }
 .footerFlex {
     display: flex;
@@ -250,39 +262,39 @@ ul.listNav li {
     width: 40%;
     padding: 0;
     list-style-type: none;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .footerFlex__List-even {
     width: auto;
     padding: 0;
     list-style-type: none;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .footerFlex__List-horizontal {
     display: flex;
     width: 100%;
     padding: 0;
     list-style-type: none;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .footerFlex__List-horizontal-middle {
     justify-content: center;
     list-style-type: none;
     display: flex;
-    font-family: 'Segoe UI';
+    font-family: $font;
     width: 100%;
     padding: 0;
 }
 .footerFlex__List-horizontal-middle li {
     margin-left: 10px ;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .footerFlex__Section {
     display: flex;
     flex-direction: column;
     width: 15%;
     padding-left: 80px;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .footerFlex__Section-middle {
     display: flex;
@@ -290,7 +302,7 @@ ul.listNav li {
     width: 70%;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI';
+    font-family: $font;
 }
 .webAuthor {
     display: flex;
@@ -307,7 +319,7 @@ ul.listNav li {
     display: block;
     width: 0;
     height: 2px;
-    background: #fbd10d;
+    background: $yellow;
     transition: width 400ms;
 }
 .underlinedLink:hover::after {
@@ -419,7 +431,7 @@ ul.listNav li {
     border-radius: 3px;
 }
 .wrapper .parent-tab label {
-    background-color: #fbd10d;
+    background-color: $yellow;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -431,15 +443,15 @@ ul.listNav li {
 .wrapper label span {
     font-size: 15px;
     font-weight: 500;
-    font-family: 'Segoe UI'
+    font-family: $font;
 }
 .wrapper label .icon {
     position: relative;
     height: 30px;
     width: 30px;
-    color: #fbd10d;
+    color: $yellow;
     display: block;
-    background-color: #343a40;
+    background-color: $grey;
     border-radius: 50%;
 }
 .parent-tab input:checked ~ label .icon i:before {
@@ -472,20 +484,28 @@ form {
     width: 50%;
     margin: auto;
 }
+input.text {
+    height: 30px;
+}
 input, textarea {
     width: 100%;
     margin-bottom: 20px;
     font-size: 17px;
     border: none;
-    font-family: inherit;
+    font-family: $font;
+    border-radius: 3px;
 }
 textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
 }
-input.checkbox {
+.checkbox {
     width: 15px;
+}
+.news {
+    color: $white;
+    font-family: $font;
 }
 
 /*vista mobile*/
@@ -493,6 +513,9 @@ input.checkbox {
 /* CSS secciones Index*/
     .heading {
         text-align: center;
+    }
+    .logoContainer {
+        width: 80%;
     }
     .animalSection__Item {
         max-width: 100%;
